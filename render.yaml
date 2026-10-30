@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: review-triage-ai
+    runtime: docker
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: LLM_PROVIDER
+        value: mock
